@@ -18,9 +18,9 @@ docker run -d \
   redis:alpine
 
 # Subir o contêiner da aplicação
-docker build -t dalinecruz/linuxtips-giropops-senhas:1.0 .
+docker build -t dalinecruz/linuxtips-giropops-senhas:2.0 .
 docker run -d \
   --name $APP_CONTAINER_NAME \
   --network $NETWORK_NAME \
   -p 5000:5000 \
-  dalinecruz/linuxtips-giropops-senhas:1.0
+  dalinecruz/linuxtips-giropops-senhas:2.0
